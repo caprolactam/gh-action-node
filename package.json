@@ -4,28 +4,24 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "format": "prettier '**/*.{js,jsx,ts,tsx,json,css,yaml,yml}' --write",
+    "format": "prettier '**/*.{js,jsx,json,css,yaml,yml}' --write",
     "lint": "eslint .",
-    "tsc": "tsc --noEmit",
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint --fix",
-    "*.{js,jsx,ts,tsx,css,json,yaml}": "prettier --write"
+    "*.{js,jsx}": "eslint --fix",
+    "*.{js,jsx,css,json,yaml}": "prettier --write"
   },
   "author": "caprolactam",
   "license": "MIT",
   "devDependencies": {
     "@epic-web/config": "^1.16.3",
     "@eslint/compat": "^1.2.4",
-    "@total-typescript/ts-reset": "^0.6.1",
     "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
-    "prettier": "^3.4.2",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.2"
+    "prettier": "^3.4.2"
   },
   "engines": {
     "node": "22"
