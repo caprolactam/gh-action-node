@@ -1,0 +1,14 @@
+{
+  "include": ["**/*.ts", "**/*.tsx"],
+  "extends": ["@epic-web/config/typescript"],
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["@total-typescript/ts-reset/dom"],
+    "esModuleInterop": true,
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

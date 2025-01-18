@@ -1,0 +1,8 @@
+node_modules
+
+/build
+.env
+.cache
+
+# Easy way to create temporary files/folders that won't accidentally be added to git
+*.local.*
